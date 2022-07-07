@@ -1,0 +1,75 @@
+main {
+    .main__jumbotron {
+        background-image: url("../../../public/img//jumbotron.jpg");
+        background-position: top;
+        background-size: cover;
+        height: 400px;
+    }
+    .main__series {
+        background-color: var(--bg-color-black);
+        &__note {
+            background-color: var(--bg-color-blue);
+            position: absolute;
+            top: -30px;
+            h3 {
+                padding: 15px 20px;
+                color: var(--font-color-white);
+                text-transform: uppercase;
+            }
+        }
+        &__comics {
+            padding: 50px 20px;
+            &__container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                &__comic {
+                    width: calc(100%/6);                    
+                    h3 {
+                        margin: 10px 0;
+                        color: var(--font-color-white);
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            &__btn {
+                display: flex;
+                justify-content: center;
+                button {
+                    background-color: var(--bg-color-blue);
+                    text-transform: uppercase;
+                    padding: 15px 40px;
+                    font-weight: 700;
+                    color: var(--font-color-white);
+                    border: none;
+                }
+            }
+        }
+    }
+    .main__nav__bg {
+        background-color: var(--bg-color-blue);
+    }
+    .main__nav {
+        display: flex;
+        justify-content: center;
+        & ul {
+            display: flex;
+            justify-content: center;
+            & li {
+            padding: 40px 10px;
+            display: flex;
+            align-items: center;
+                p {
+                    text-transform: uppercase;
+                    color: var(--font-color-white);
+                }
+                img {
+                    width: 70px;
+                    height: 70px;
+                    object-fit: contain;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
