@@ -1,0 +1,80 @@
+footer {
+    .footer__nav__bg {
+        background-image: url("../../../public/img/footer-bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .footer__nav {
+        display: flex;
+        justify-content: space-between;
+        height: 400px;
+        .links {
+            display: flex;
+            padding: 80px 10px;
+            gap: 20px;
+            a {
+                color: #959588;
+            }
+            a:hover {
+                color: #fff;
+            }
+            .link-group-1 {
+                margin-bottom: 20px;
+            }
+        }
+        h3 {
+            text-transform: uppercase;
+            padding-bottom: 10px;
+            color: #fff;
+        }
+        &__img {
+            background-image: url("../../../public/img/dc-logo-bg.png");
+            height: 400px;
+            width: 600px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+    .footer__social__bg {
+        background-color: #303030;
+    }
+    .footer__social {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        height: 80px;
+        &__btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            button {
+                background-color: #303030;
+                border: 2px solid #0282f9;
+                color: #fff;
+                font-size: 18px;
+                padding: 10px 20px;
+            }
+        }
+        &__links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h3 {
+                padding-right: 20px;
+                color: #0282f9;
+            }
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                & li {
+                    img {
+                        width: 40px;
+                        height: 40px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
