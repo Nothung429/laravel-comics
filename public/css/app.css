@@ -1,6 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;
-
-500;700&display=swap);* {
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap);* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -35,32 +33,24 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-
 header .header__logo {
   width: 80px;
   height: 80px;
 }
-
 header .header__logo img {
   max-width: 100%;
 }
-
 header .header__list {
   display: flex;
 }
-
 header .header__list li {
   padding: 40px 10px;
 }
-
 header .header__list li a {
   text-transform: uppercase;
   color: inherit;
 }
-
-header .header__list .active,
-header .header__list li:hover {
-  border-bottom: 3px solid #0282f9;
+header .header__list .active, header .header__list li:hover {
   color: var(--font-color-blue);
 }
 
@@ -70,53 +60,44 @@ header .header__list li:hover {
 }
 
 main .main__jumbotron {
-  background-image: url(/images/jumbotron.jpg?1b0a3671766964a4114f90322970b124);
+  background-image: url("../../../public/img/jumbotron.jpg");
   background-position: top;
   background-size: cover;
   height: 400px;
 }
-
 main .main__series {
   background-color: var(--bg-color-black);
 }
-
 main .main__series__note {
   background-color: var(--bg-color-blue);
   position: absolute;
   top: -30px;
 }
-
 main .main__series__note h3 {
   padding: 15px 20px;
   color: var(--font-color-white);
   text-transform: uppercase;
 }
-
 main .main__series__comics {
   padding: 50px 20px;
 }
-
 main .main__series__comics__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
 main .main__series__comics__container__comic {
   width: 16.6666666667%;
 }
-
 main .main__series__comics__container__comic h3 {
   margin: 10px 0;
   color: var(--font-color-white);
   text-transform: uppercase;
 }
-
 main .main__series__comics__btn {
   display: flex;
   justify-content: center;
 }
-
 main .main__series__comics__btn button {
   background-color: var(--bg-color-blue);
   text-transform: uppercase;
@@ -125,32 +106,26 @@ main .main__series__comics__btn button {
   color: var(--font-color-white);
   border: none;
 }
-
 main .main__nav__bg {
   background-color: var(--bg-color-blue);
 }
-
 main .main__nav {
   display: flex;
   justify-content: center;
 }
-
 main .main__nav ul {
   display: flex;
   justify-content: center;
 }
-
 main .main__nav ul li {
   padding: 40px 10px;
   display: flex;
   align-items: center;
 }
-
 main .main__nav ul li p {
   text-transform: uppercase;
   color: var(--font-color-white);
 }
-
 main .main__nav ul li img {
   width: 70px;
   height: 70px;
@@ -160,66 +135,55 @@ main .main__nav ul li img {
 }
 
 footer .footer__nav__bg {
-  background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
+  background-image: url("../../../public/img/dc-logo-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 footer .footer__nav {
   display: flex;
   justify-content: space-between;
   height: 400px;
 }
-
 footer .footer__nav .links {
   display: flex;
-  padding: 80px 10px;
+  padding: 40px 10px;
   gap: 20px;
 }
-
 footer .footer__nav .links a {
   color: #959588;
 }
-
 footer .footer__nav .links a:hover {
   color: #fff;
 }
-
 footer .footer__nav .links .link-group-1 {
   margin-bottom: 20px;
 }
-
 footer .footer__nav h3 {
   text-transform: uppercase;
   padding-bottom: 10px;
   color: #fff;
 }
-
 footer .footer__nav__img {
-  background-image: url(/images/dc-logo-bg.png?f4404ce9dc132a08a47f19e3f73f1417);
+  background-image: url("../../../public/img/dc-logo-bg.png");
   height: 400px;
   width: 600px;
   background-position: center;
   background-repeat: no-repeat;
 }
-
 footer .footer__social__bg {
   background-color: #303030;
 }
-
 footer .footer__social {
   display: flex;
   justify-content: space-between;
   align-content: center;
   height: 80px;
 }
-
 footer .footer__social__btn {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 footer .footer__social__btn button {
   background-color: #303030;
   border: 2px solid #0282f9;
@@ -227,27 +191,22 @@ footer .footer__social__btn button {
   font-size: 18px;
   padding: 10px 20px;
 }
-
 footer .footer__social__links {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 footer .footer__social__links h3 {
   padding-right: 20px;
   color: #0282f9;
 }
-
 footer .footer__social__links ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 footer .footer__social__links ul li img {
   width: 40px;
   height: 40px;
   margin-right: 10px;
 }
-

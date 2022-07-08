@@ -1,6 +1,6 @@
 footer {
     .footer__nav__bg {
-        background-image: url("../../../public/img/footer-bg.jpg");
+        background-image: url("../../../public/img/dc-logo-bg.png");
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -10,7 +10,7 @@ footer {
         height: 400px;
         .links {
             display: flex;
-            padding: 80px 10px;
+            padding: 40px 10px;
             gap: 20px;
             a {
                 color: #959588;
