@@ -1,0 +1,27 @@
+.comic {
+    hr {
+        border: 5px solid red;
+    }
+    &__top {
+        background-color: var(--bg-color-white);
+        display: flex;
+        &__left {
+            &__price {
+                background-color: var(--bg-color-lightgreen);
+                color: var(--font-color-white);
+            }
+        }
+    }
+    &__bottom {
+        background-color: var(--bg-color-lightergray);
+    }
+}
+.separee {
+    height: 100px;
+    background-color: var(--font-color-blue);
+    position: relative;
+    img {
+        position: absolute;
+        bottom: 50%;
+    }
+}

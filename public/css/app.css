@@ -8,8 +8,22 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
 .frame {
-  max-width: 1200px;
+  max-width: 1320px;
+  margin: auto;
+}
+
+.comic-frame {
+  max-width: 1100px;
   margin: auto;
 }
 
@@ -18,9 +32,13 @@ li {
   --bg-color-black: #1c1c1c;
   --bg-color-gray: #303030;
   --bg-color-lightgray: #797979;
+  --bg-color-lightergray: #f6f6f6;
   --bg-color-white: #ffffff;
+  --bg-color-lightgreen: #55ba59;
   --font-color-white: #ffffff;
   --font-color-blue: #0282f9;
+  --font-color-darkblue: #003f5e;
+  --font-color-lightblue: #00a9d9;
   --font-color-gray: #464646;
 }
 
@@ -28,39 +46,45 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-header {
+header .ad {
+  background-color: var(--bg-color-blue);
+  color: var(--font-color-white);
+}
+header .ad .frame {
+  display: flex;
+  justify-content: flex-end;
+}
+header .ad .frame p {
+  margin-left: 30px;
+}
+header .header__core {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-header .header__logo {
+header .header__core__logo {
   width: 80px;
   height: 80px;
 }
-header .header__logo img {
+header .header__core__logo img {
   max-width: 100%;
 }
-header .header__list {
+header .header__core__nav__list {
   display: flex;
 }
-header .header__list li {
+header .header__core__nav__list li {
   padding: 40px 10px;
 }
-header .header__list li a {
+header .header__core__nav__list li a {
   text-transform: uppercase;
   color: inherit;
 }
-header .header__list .active, header .header__list li:hover {
+header .header__core__nav__list .active, header .header__core__nav__list li:hover {
   color: var(--font-color-blue);
 }
 
-.ad {
-  background-color: var(--bg-color-blue);
-  color: var(--font-color-white);
-}
-
 main .main__jumbotron {
-  background-image: url("../../../public/img/jumbotron.jpg");
+  background-image: url("../img/jumbotron.jpg");
   background-position: top;
   background-size: cover;
   height: 400px;
@@ -135,19 +159,31 @@ main .main__nav ul li img {
 }
 
 footer .footer__nav__bg {
-  background-image: url("../../../public/img/dc-logo-bg.png");
+  background-image: url("../img/footer-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 footer .footer__nav {
   display: flex;
   justify-content: space-between;
-  height: 400px;
+  height: 460px;
 }
 footer .footer__nav .links {
   display: flex;
-  padding: 40px 10px;
-  gap: 20px;
+  align-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 50px 0;
+}
+footer .footer__nav .links ul {
+  padding-right: 20px;
+}
+footer .footer__nav .links h3 {
+  text-transform: uppercase;
+  font-size: 22px;
+  padding: 15px 20px 15px 0;
+  color: #fff;
 }
 footer .footer__nav .links a {
   color: #959588;
@@ -158,14 +194,9 @@ footer .footer__nav .links a:hover {
 footer .footer__nav .links .link-group-1 {
   margin-bottom: 20px;
 }
-footer .footer__nav h3 {
-  text-transform: uppercase;
-  padding-bottom: 10px;
-  color: #fff;
-}
 footer .footer__nav__img {
-  background-image: url("../../../public/img/dc-logo-bg.png");
-  height: 400px;
+  background-image: url("../img/dc-logo-bg.png");
+  height: 460px;
   width: 600px;
   background-position: center;
   background-repeat: no-repeat;
@@ -209,4 +240,29 @@ footer .footer__social__links ul li img {
   width: 40px;
   height: 40px;
   margin-right: 10px;
+}
+
+.comic hr {
+  border: 5px solid red;
+}
+.comic__top {
+  background-color: var(--bg-color-white);
+  display: flex;
+}
+.comic__top__left__price {
+  background-color: var(--bg-color-lightgreen);
+  color: var(--font-color-white);
+}
+.comic__bottom {
+  background-color: var(--bg-color-lightergray);
+}
+
+.separee {
+  height: 100px;
+  background-color: var(--font-color-blue);
+  position: relative;
+}
+.separee img {
+  position: absolute;
+  bottom: 50%;
 }
