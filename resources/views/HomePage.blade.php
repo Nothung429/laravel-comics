@@ -34,27 +34,13 @@
                 <div class="frame">
                     <div class="main__nav">
                         <ul>
-                            <li>
-                                <img src="{{asset('img/buy-comics-digital-comics.png')}}" alt="">
-                                <p>DIGITAL COMICS</p>
-                            </li>
-                            <li>
-                                <img src="{{asset('img/buy-comics-digital-comics.png')}}" alt="">
-                                <p>DIGITAL COMICS</p>
-                            </li>
-                            <li>
-                                <img src="{{asset('img/buy-comics-digital-comics.png')}}" alt="">
-                                <p>DIGITAL COMICS</p>
-                            </li>
-                            <li>
-                                <img src="{{asset('img/buy-comics-digital-comics.png')}}" alt="">
-                                <p>DIGITAL COMICS</p>
-                            </li>
-                            <li>
-                                <img src="{{asset('img/buy-comics-digital-comics.png')}}" alt="">
-                                <p>DIGITAL COMICS</p>
-                            </li>
-                        </ul>
+                            @foreach($mainNav as $main)
+                                <li>
+                                    <img src="{{$main['image']}}" alt="{{$main['text']}}">
+                                    <p>{{$main['text']}}</p>
+                                </li>
+                            @endforeach
+                        </ul>                        
                     </div>
                 </div>
             </div>

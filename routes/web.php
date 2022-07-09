@@ -14,11 +14,23 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $comics = config('comics');
-    return view('HomePage', compact('comics'));
-});
+
+    $comics = config('comics');    
+    $headerLinks = config('headerLinks');
+    $footerLinks = config('footerLinks');
+    $mainNav = config('mainNav');   
+
+    return view('HomePage', compact('comics', 'headerLinks', 'footerLinks', 'mainNav'));
+
+})->name('home');
 
 Route::get('/product', function () {
+
     $comics = config('comics');
-    return view('ComicPage', compact('comics'));
-});
+    $headerLinks = config('headerLinks');
+    $footerLinks = config('footerLinks');
+    $mainNav = config('mainNav');
+
+    return view('ComicPage', compact('comics', 'headerLinks', 'footerLinks', 'mainNav'));
+    
+})->name('product');
