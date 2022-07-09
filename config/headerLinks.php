@@ -8,7 +8,7 @@
         [
             "text" => "comics",
             "isActive" => "",
-            "route" => "product"
+            "route" => "home"
         ],
         [
             "text" => "movies",
