@@ -15,22 +15,28 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    $comics = config('comics');    
+    $comics = config('comics');
     $headerLinks = config('headerLinks');
     $footerLinks = config('footerLinks');
-    $mainNav = config('mainNav');   
+    $mainNav = config('mainNav');
 
     return view('HomePage', compact('comics', 'headerLinks', 'footerLinks', 'mainNav'));
 
 })->name('home');
 
-Route::get('/product', function () {
+Route::get('comic/{id}', function ($id) {
 
     $comics = config('comics');
     $headerLinks = config('headerLinks');
     $footerLinks = config('footerLinks');
     $mainNav = config('mainNav');
 
-    return view('ComicPage', compact('comics', 'headerLinks', 'footerLinks', 'mainNav'));
+    if($id >= count($comics)) {
+        abort('404');
+    }
+
+    $comic = $comics[$id];
+
+    return view('ComicPage', compact('comic', 'headerLinks', 'footerLinks', 'mainNav'));
     
-})->name('product');
+})->where('id', '[0-9]+')->name('ComicPage');

@@ -25,7 +25,7 @@
                             @endforeach
                         </div>
                         <div class="main__series__comics__btn">
-                            <button>load more</button>
+                            <button><a href="{{route('ComicPage', ['id' => 0])}}">load more</a></button>
                         </div>
                     </div>
                 </div>
