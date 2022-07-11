@@ -37,6 +37,6 @@ Route::get('comic/{id}', function ($id) {
 
     $comic = $comics[$id];
 
-    return view('ComicPage', compact('comic', 'headerLinks', 'footerLinks', 'mainNav'));
+    return view('comicpage', compact('comic', 'headerLinks', 'footerLinks', 'mainNav'));
     
-})->where('id', '[0-9]+')->name('ComicPage');
+})->where('id', '[0-9]+')->name('comicpage');

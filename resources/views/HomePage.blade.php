@@ -17,15 +17,17 @@
                 <div class="frame">
                     <div class="main__series__comics">
                         <div class="main__series__comics__container">
-                            @foreach($comics as $comic)
+                            @foreach($comics as $id => $comic)
                                 <div class="main__series__comics__container__comic">
-                                    <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
-                                    <h3>{{$comic['title']}}</h3>
+                                    <a href="{{route('comicpage',['id'=> $id])}}">
+                                        <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
+                                        <h3>{{$comic['title']}}</h3>
+                                    </a>
                                 </div>
                             @endforeach
                         </div>
                         <div class="main__series__comics__btn">
-                            <button><a href="{{route('ComicPage', ['id' => 0])}}">load more</a></button>
+                            <button>CIAO</button>
                         </div>
                     </div>
                 </div>
